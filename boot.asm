@@ -18,8 +18,8 @@ start:
 	jmp $			; Jump here - infinite loop!
 
 
-	text_string1 db '-=FredOS=-',0Ah,0
-	text_string2 db 'Work in Progress', 0
+	text_string1 db '-=FredOS=-',0Ah,0Dh,0
+	text_string2 db 'Work in Progress',0Ah,0Dh, 0
 
 
 print_string:			; Routine: output string in SI to screen
